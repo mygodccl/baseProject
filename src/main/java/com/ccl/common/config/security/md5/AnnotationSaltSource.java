@@ -1,4 +1,4 @@
-package com.fcs.common.config.security.md5;
+package com.ccl.common.config.security.md5;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;

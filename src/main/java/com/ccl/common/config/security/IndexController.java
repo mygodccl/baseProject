@@ -1,4 +1,4 @@
-package com.fcs.common.config.security;
+package com.ccl.common.config.security;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

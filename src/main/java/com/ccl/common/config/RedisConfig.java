@@ -1,4 +1,4 @@
-package com.fcs.common.config;
+package com.ccl.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
