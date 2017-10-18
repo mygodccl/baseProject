@@ -1,0 +1,123 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.6.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'org.springframework.boot'
+//apply plugin: 'war'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	jcenter()
+	mavenCentral()
+}
+
+configurations {
+	providedRuntime
+}
+
+dependencies {
+	
+    //spring boot web相关
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.6.RELEASE")
+    //spring boot test相关
+    compile("org.springframework.boot:spring-boot-starter-test:1.5.6.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE")
+    
+    //redis
+    compile("org.springframework.boot:spring-boot-starter-data-redis:1.5.6.RELEASE")
+    
+	//mybatis
+	compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.1'
+	compile("com.baomidou:mybatisplus-spring-boot-starter:1.0.4")
+	compile("com.baomidou:mybatis-plus:2.1-gamma")
+	compile("com.zaxxer:HikariCP:2.5.1")
+	
+	//thymeleaf
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.5.6.RELEASE'
+	
+	//dataSource
+	//compile group: 'com.alibaba', name: 'druid', version: '1.1.3'
+	//mysql-connection
+	compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+	
+	//shiro-spring
+//	compile group: 'org.apache.shiro', name: 'shiro-spring', version: '1.4.0'
+	//shiro-ehcache
+//	compile group: 'org.apache.shiro', name: 'shiro-ehcache', version: '1.4.0'
+//	compile group: 'com.github.theborakompanioni', name: 'thymeleaf-extras-shiro', version: '+'
+//	compile group: 'org.crazycake', name: 'shiro-redis', version: '2.4.2.1-RELEASE'
+	
+	//测试阿里云的消息队列
+//	compile("com.aliyun.openservices:ons-client:1.6.0.Final")
+	
+	//nekohtml
+	compile group: 'net.sourceforge.nekohtml', name: 'nekohtml', version: '1.9.22'
+	
+	//Google.guava工具集
+	compile group: 'com.google.guava', name: 'guava', version: '23.0'
+	//fastjson
+	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.38'
+	//commons-lang3
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+	//velocity
+	compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+	//swagger2
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+//	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '1.5.6.RELEASE'
+	
+}
+
+//发布jar文件到本地, 命令:gradle uploadArchives
+/*
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'C:/repos'
+       }
+    }
+}
+*/
+//发布jar到ivy远程仓库
+/*
+uploadArchives {
+    repositories {
+        ivy {
+            credentials {
+                username "username"
+                password "password"
+            }
+            url "http://repo.myrepo.com"
+        }
+    }
+}
+*/
+//发布jar到maven仓库, 远程类似ivy
+/*
+//需要依赖maven插件
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://localhost/tmp/myRepo/")
+        }
+    }
+}
+*/
+
+//为该项目生成eclipse的相关文件, 命令:gradle eclipse
+//apply plugin: 'eclipse'

@@ -1,0 +1,43 @@
+server:
+  port: 9090
+spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.ccl.common.datasource.DynamicDataSource
+#    url: jdbc:mysql://127.0.0.1:3306/skeleton_shiro?characterEncoding=utf8&serverTimezone=UTC
+#    username: root
+#    password: root
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html; charset=utf-8
+    cache: false
+  shiro: 
+    timeout: 1000
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: null
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+mybatis-plus:
+  mapper-locations:
+  - classpath:com/ccl/*/mapper/xml/*Mapper.xml
+  type-aliases-package: com.ccl.*.entity
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+logging:
+  level:
+    root: info
+debug: true
