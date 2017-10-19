@@ -1,5 +1,7 @@
 server:
   port: 9090
+  tomcat:
+    uri-encoding: UTF-8
 spring:
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,6 +27,8 @@ spring:
       max-wait: -1
       max-idle: 8
       min-idle: 0
+  aop:
+    auto: true
 mybatis-plus:
   mapper-locations:
   - classpath:com/ccl/*/mapper/xml/*Mapper.xml
@@ -39,5 +43,5 @@ mybatis-plus:
     cache-enabled: false
 logging:
   level:
-    root: info
+    root: warn
 debug: true

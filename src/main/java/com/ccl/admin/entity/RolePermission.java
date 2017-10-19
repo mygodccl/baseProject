@@ -4,15 +4,6 @@ import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
 
-
-/**
- * <p>
- * 
- * </p>
- *
- * @author Lucare
- * @since 2017-03-08
- */
 @TableName("t_role_permission")
 public class RolePermission extends Model<RolePermission> {
 

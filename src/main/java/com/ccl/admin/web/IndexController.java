@@ -1,4 +1,3 @@
-package com.ccl.admin.web;
 //package com.ccl.admin.web;
 //
 //import org.apache.shiro.SecurityUtils;
@@ -6,9 +5,6 @@ package com.ccl.admin.web;
 //import org.springframework.ui.Model;
 //import org.springframework.web.bind.annotation.RequestMapping;
 //
-///**
-// * Created by Lucare.Feng on 2017/2/28.
-// */
 //@Controller
 //public class IndexController {
 //   

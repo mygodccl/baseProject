@@ -7,10 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.plugins.PerformanceInterceptor;
 
-/**
- * Created by Lucare.Feng on 2017/2/24.
- * update on 2017/07/13
- */
 @Configuration
 @MapperScan("com.ccl.*.mapper*")
 public class MybatisPlusConfig {

@@ -30,7 +30,7 @@ import com.ccl.admin.mapper.RolePermissionMapper;
 public class CustomInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
 
     private static Map<String, Collection<ConfigAttribute>> resourceMap = null;
-    private org.slf4j.Logger LOG = LoggerFactory.getLogger(getClass());
+    private org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private PermissionMapper permissionMapper;
@@ -57,7 +57,7 @@ public class CustomInvocationSecurityMetadataSource implements FilterInvocationS
                 resourceMap.put(permission.getUrl(), roleNames);
             }
         }
-        LOG.info("security info load success!!");
+        log.info("权限资源关系加载成功!!");
     }
 
     @Override

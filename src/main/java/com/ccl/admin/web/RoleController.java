@@ -1,4 +1,3 @@
-package com.ccl.admin.web;
 //package com.ccl.admin.web;
 //
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -11,14 +10,6 @@ package com.ccl.admin.web;
 //import com.ccl.admin.entity.Role;
 //import com.ccl.admin.service.IRoleService;
 //
-///**
-// * <p>
-// *  前端控制器
-// * </p>
-// *
-// * @author Lucare
-// * @since 2017-03-06
-// */
 //@Controller
 //@RequestMapping("/admin/role")
 //public class RoleController {

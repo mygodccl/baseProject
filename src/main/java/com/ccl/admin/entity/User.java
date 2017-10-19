@@ -7,15 +7,6 @@ import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
 
-
-/**
- * <p>
- * 
- * </p>
- *
- * @author Lucare
- * @since 2017-02-24
- */
 @TableName("t_user")
 public class User extends Model<User> {
 

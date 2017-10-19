@@ -9,14 +9,6 @@ import com.ccl.admin.entity.Permission;
 import com.ccl.admin.mapper.PermissionMapper;
 import com.ccl.admin.service.IPermissionService;
 
-/**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author Lucare
- * @since 2017-03-06
- */
 @Service
 public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permission> implements IPermissionService {
 

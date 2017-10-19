@@ -7,14 +7,6 @@ import java.util.List;
 import java.util.Set;
 
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author Lucare
- * @since 2017-03-06
- */
 @TableName("t_role")
 public class Role extends Model<Role> {
 

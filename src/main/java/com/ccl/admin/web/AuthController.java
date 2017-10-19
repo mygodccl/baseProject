@@ -1,4 +1,3 @@
-package com.ccl.admin.web;
 //package com.ccl.admin.web;
 //
 //import com.ccl.admin.entity.User;
@@ -10,9 +9,6 @@ package com.ccl.admin.web;
 //import org.springframework.stereotype.Controller;
 //import org.springframework.web.bind.annotation.RequestMapping;
 //
-///**
-// * Created by Lucare.Feng on 2017/3/6.
-// */
 //@Controller
 //public class AuthController {
 //

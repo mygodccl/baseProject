@@ -4,15 +4,6 @@ import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
 
-
-/**
- * <p>
- * 
- * </p>
- *
- * @author Lucare
- * @since 2017-03-08
- */
 @TableName("t_user_role")
 public class UserRole extends Model<UserRole> {
 

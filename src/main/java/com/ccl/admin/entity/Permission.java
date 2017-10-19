@@ -5,14 +5,6 @@ import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
 
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author Lucare
- * @since 2017-03-06
- */
 @TableName("t_permission")
 public class Permission extends Model<Permission> {
 
