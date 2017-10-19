@@ -13,11 +13,11 @@ import com.ccl.Application;
 @RunWith(SpringJUnit4ClassRunner.class)
 public class Log4j2Test {
 
-	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Test
 	public void test() throws Exception {
-		MDC.put("user", "开车不直播, 出事贴吧找老哥.");
+		MDC.put("user", "开车不直播, 出事贴吧找老哥.");//对应配置文件pattern中%X{user}变量
 		logger.trace("I am trace log.");
 		logger.debug("I am debug log.");
 		logger.warn("I am warn log.");
