@@ -93,6 +93,8 @@ dependencies {
 	
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.9.2'
 	
+	compile group: 'io.netty', name: 'netty-all', version: '4.1.19.Final'
+	
 }
 
 //发布jar文件到本地, 命令:gradle uploadArchives
