@@ -95,6 +95,9 @@ dependencies {
 	
 	compile group: 'io.netty', name: 'netty-all', version: '4.1.19.Final'
 	
+	// https://mvnrepository.com/artifact/org.apache.activemq/activemq-all
+	compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.15.2'
+	
 }
 
 //发布jar文件到本地, 命令:gradle uploadArchives
